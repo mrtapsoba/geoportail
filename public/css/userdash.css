@@ -1,0 +1,176 @@
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.entete {
+  background-color: #0aba16;
+  height: 80px;
+  color: #fff;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.bt-profile-theme {
+  background-color: #0aba16;
+  height: 4vh;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  color: yellow;
+}
+
+textarea {
+  resize: none;
+}
+
+
+.hmoyen {
+  height: 35px;
+  background-color: #0aba16;
+  border: 2px solid #fff;
+  border-radius: 10px;
+}
+
+.gotocards {
+  height: 35px;
+  background-color: #fff;
+  border: 2px solid greenyellow;
+  color: #0aba16;
+  border-radius: 10px;
+  margin-right: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.form {
+  background-color: #0aba16;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.form input {
+  display: block;
+  height: 40px;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+.btnconnexion {
+  background-color: #1bff2b;
+  color: #fff;
+  border: 2px solid #fff;
+  height: 35px;
+  border: 2px solid #fff;
+}
+
+.welcome {
+  margin: 10px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.tacheliste {
+  background-color: #0aba16;
+  height: 86vh;
+}
+
+.bouton {
+  height: 35px;
+  background-color: #0aba16;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.boutonactive {
+  height: 35px;
+  background-color: #fff;
+  border: 2px solid #0aba16;
+  color: #0aba16;
+  border-radius: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.boutonclose {
+  height: 35px;
+  background-color: #fff;
+  border: 2px solid red;
+  color: red;
+  border-radius: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.profileform input {
+  height: 35px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+th {
+  border-bottom: 1px solid #0aba16;
+}
+
+td,
+th {
+  text-align: left;
+  padding: 8px 0;
+}
+
+tr:hover {
+  font-weight: bold;
+  background-color: #a6fec644;
+  cursor: pointer;
+}
+
+.detaildemande {
+  border: 2px solid #0aba16;
+  border-radius: 30px;
+  height: 65vh;
+}
+
+.connexion-img {
+  height: 250px;
+}
+
+textarea {
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+label {
+  font-weight: bold;
+}
+
+.table {
+  height: 375px;
+  overflow: scroll;
+  margin: 0px;
+}
+
+.flex-content {
+  height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-content {
+  width: 100%;
+  align-items: center;
+  height: calc(100% - 80px);
+  display: flex;
+  align-items: center;
+}

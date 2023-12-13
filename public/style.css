@@ -1,0 +1,61 @@
+.leaflet-control-zoom-in {
+    color: green !important;
+}
+
+.leaflet-control-zoom-out {
+    color: orange !important;
+}
+
+.leaflet-popup-content-wrapper {
+    border-radius: 0;
+    background: black !important;
+    color: white;
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+.leaflet-popup-content {
+    margin: 5px;
+}
+
+.leaflet-popup-tip {
+    background: red !important;
+}
+
+.leaflet-popup-close-button {
+    display: nopne;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    clear: both;
+}
+
+#delete,
+#export {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    z-index: 100;
+    background: white;
+    color: black;
+    padding: 6px;
+    border-radius: 4px;
+    font-family: 'Helvetica Neue';
+    cursor: pointer;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+#export {
+    top: 90px;
+}

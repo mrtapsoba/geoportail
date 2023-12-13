@@ -1,0 +1,372 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/nunito/Nunito-Regular.ttf') format("truetype-variations");
+}
+
+@font-face {
+    font-family: 'Nunito-s';
+    src: url('../fonts/nunito/Nunito-SemiBold.ttf') format("truetype-variations");
+}
+
+/*
+    #F0FFF0 : trnsparent
+    #37BD37 : solid
+    #F3F3F3 : Gris
+
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito';
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #37BD37;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #37BD37;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #F0F0F0;
+}
+
+td a,
+th a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+td a:hover,
+th a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.contents {
+    width: inherit;
+    padding: 25px 75px 25px 75px;
+}
+
+main .my-nav,
+main .my-nav.active {
+    width: 20%;
+    height: 100%;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    justify-content: space-around;
+}
+
+main .my-nav a {
+    width: 60%;
+    margin: 25px auto;
+    text-align: center;
+}
+
+main .my-nav a img {
+    height: 100px;
+}
+
+main .my-nav .menu-btn a {
+    display: block;
+    font-size: 14px;
+    width: 100%;
+    text-align: left;
+    text-decoration: none;
+    color: #000;
+    padding: 8px 0 8px 25px;
+    margin: 12px auto;
+    border-right: 4px solid transparent;
+    background-color: #fff;
+    font-weight: bold;
+    transition: padding 0.5s ease-in-out;
+}
+
+.page-content {
+    height: max-content;
+    width: 100%;
+    margin-top: 50px;
+}
+
+main .my-nav .menu-btn a.active {
+    color: #000;
+    background-color: #F0FFF0;
+    border-right: 4px solid #37BD37;
+}
+
+main .my-nav .menu-btn a:hover {
+    background-color: #F0FFF0;
+    border-right: 4px solid #37BD37;
+    padding: 8px 0 8px 35px;
+    transition: all 0.1s ease-in-out;
+}
+
+main .my-nav a .ic {
+    margin-right: 8px;
+    color: #37BD37;
+}
+
+.page-title h1 {
+    font-size: 28px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+.page-title div {
+    width: 80px;
+    height: 4px;
+    background-color: #e6231c;
+    border-radius: 8px;
+}
+
+.my-nav-phone {
+    display: none;
+}
+
+.list-item-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.summary {
+    width: 30%;
+}
+
+main .my-nav a.submit-btn {
+    text-decoration: none;
+    width: 80%;
+    border-radius: 8px;
+    color: #000;
+    background-color: transparent;
+    font-weight: bold;
+    padding: 8px 15px;
+}
+
+@media screen and (max-width:1134px) {
+
+    main .my-nav,
+    main .my-nav.active {
+        width: 20%;
+    }
+}
+
+/*max-width:1008px*/
+
+
+@media screen and (max-width:996px) {
+    main {
+        display: block;
+    }
+
+    main .my-nav {
+        display: none;
+    }
+
+    main .my-nav-phone {
+        display: block;
+        position: relative;
+        width: 100%;
+    }
+
+    .my-nav-phone .phone-actions {
+        position: fixed;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        background-color: #F0FFF0;
+        align-items: center;
+        width: 100%;
+        height: 80px;
+        padding: 10px 5%;
+        z-index: 99;
+    }
+
+    .page-title {
+        margin-top: 80px;
+    }
+
+    .page-content {
+        margin-top: 25px;
+        height: auto;
+    }
+
+    .list-item-box {
+        display: block;
+    }
+
+    .summary {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background-color: #fff;
+        width: 100%;
+        padding: 8px 5%;
+        box-shadow: 0 0 15px #e6231c2c;
+    }
+
+    .my-nav-phone .phone-actions>a {
+        height: 100%;
+    }
+
+    .my-nav-phone .phone-actions>a>img {
+        height: 100%;
+    }
+
+    .contents {
+        width: 100%;
+    }
+
+    .ic {
+        font-size: 18px;
+        color: #37BD37;
+    }
+
+    .open-btn .ic {
+        font-size: 32px;
+    }
+
+    .my-nav-phone .menu-btn {
+        position: fixed;
+        top: 0;
+        right: -80%;
+        width: 75%;
+        height: 100%;
+        box-shadow: 0 0 15px #e6231c2c;
+        background-color: #fff;
+        z-index: 100;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .menu-btn.active {
+        top: 0;
+        right: 0;
+    }
+
+    .close-btn {
+        text-align: center;
+        margin: 24px 0;
+    }
+
+    .close-btn .ic {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    main .my-nav-phone .menu-btn a.active {
+        color: #e6231c;
+    }
+
+    .pan-item {
+        margin-bottom: 75px;
+    }
+
+    main .my-nav-phone .menu-btn>a {
+        display: block;
+        width: 90%;
+        height: fit-content;
+        text-align: left;
+        text-decoration: none;
+        color: #000;
+        font-size: 18px;
+        padding: 8px 0 8px 15px;
+        margin: 30px auto;
+        border-radius: 8px;
+        font-weight: bold;
+        transition: padding 0.5s ease-in-out;
+    }
+
+    main .my-nav-phone .menu-btn a.active {
+        color: #37BD37;
+    }
+
+    main .my-nav-phone .menu-btn a:hover {
+        color: #37BD37;
+        box-shadow: 0 0 15px #f0fff0;
+        padding: 8px 0 8px 25px;
+    }
+
+    main .my-nav-phone a .ic {
+        margin-right: 8px;
+    }
+
+}
+
+/*max-width:1008px*/
+
+
+
+
+
+/*-----------PHONE------------------*/
+@media screen and (max-width:768px) {
+    body {
+        height: auto;
+    }
+
+    main .my-nav {
+        width: 75%;
+        position: fixed;
+        z-index: 99;
+        right: -80%;
+    }
+
+    main .my-nav>a {
+        display: none;
+    }
+
+    main .my-nav.active {
+        right: 0;
+        width: 75%;
+    }
+
+    main .my-nav .menu-btn a:first-child {
+        margin-top: 50px;
+    }
+
+    .contents {
+        width: 100%;
+        padding: 25px 5%;
+        overflow: hidden;
+        /*overflow-y: scroll;*/
+    }
+
+}
+
+/*max-width:1008px*/

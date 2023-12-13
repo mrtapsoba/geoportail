@@ -1,0 +1,170 @@
+.action-bar {
+    background-color: #fff;
+    padding: 12px 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.action-bar button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    margin-left: 12px;
+}
+
+.action-bar span {
+    color: #37BD37;
+    font-weight: bold;
+}
+
+.action-bar button .ic {
+    font-size: 20px;
+}
+
+/*----------card------------------*/
+.produits {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 65vh;
+    margin-top: 25px;
+}
+
+.prod-card {
+    width: 21%;
+    height: fit-content;
+    background-color: #fff;
+    box-shadow: 0 3px 6px #00000038;
+    margin-right: 5%;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.prod-card a {
+    color: #000;
+    text-decoration: none;
+}
+
+.prod-card:nth-child(4n) {
+    margin-right: 0;
+}
+
+.prod-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 4px solid #37bd37;
+}
+
+.prod-card h2 {
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.prod-card p {
+    font-size: 12px;
+    padding: 0 8px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.divide-bar {
+    height: 4px;
+    width: 100%;
+    background-color: #37bd37;
+    margin-bottom: 25px;
+}
+
+/*---------modal------------*/
+.modal h3 {
+    color: #37bd37;
+    font-size: 18px;
+
+}
+
+button {
+    outline: none;
+    cursor: pointer;
+}
+
+button {
+    border-radius: 0;
+}
+
+button:focus {
+    outline: 1px dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    padding: 0;
+    border-style: none;
+}
+
+button {
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+}
+
+button:hover,
+button:focus {
+    text-decoration: none !important;
+    outline: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+input#file-upload-button {
+    background-color: #000;
+}
+
+.form-control {
+    padding: 8px 15px;
+    height: auto;
+}
+
+.submit-btn {
+    background-color: #37BD37;
+    color: #fff;
+    padding: 8px 15px;
+}
+
+.modal-body {
+    padding: 25px;
+}
+
+
+/*-----------PHONE------------------*/
+@media screen and (max-width:768px) {
+
+    body {
+        overflow-y: scroll;
+    }
+
+    .produits {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .prod-card {
+        width: 45%;
+        background-color: #fff;
+        box-shadow: 0 3px 6px #00000038;
+        margin-right: 0;
+        margin-top: 25px;
+        cursor: pointer;
+    }
+}
